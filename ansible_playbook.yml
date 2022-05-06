@@ -16,6 +16,7 @@
     #try to log in here first before all the other tasks
     - name: Auth
       ec2:
+        region: us-east-1
         aws_access_key: "{{access_key}}"
         aws_secret_key: "{{secret_key}}"
         security_token: "{{session_token}}"
