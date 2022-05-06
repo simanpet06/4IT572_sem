@@ -17,9 +17,9 @@
       ec2_instance_facts:
         region: us-east-1
       register: ec2_info
-      aws_access_key: "{{access_key}}"
-      aws_secret_key: "{{secret_key}}"
-      security_token: "{{session_token}}"
+      #aws_access_key: "{{access_key}}"
+      #aws_secret_key: "{{secret_key}}"
+      #security_token: "{{session_token}}"
       
     - name: Remove EC2 instances
       ec2:
