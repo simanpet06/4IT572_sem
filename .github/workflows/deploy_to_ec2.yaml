@@ -106,4 +106,5 @@ jobs:
         uses: dawidd6/action-ansible-playbook@v2.5.0
         with:
           playbook: ansible_playbook.yml
-          vault_password: ${{secrets.VAULT_PASSWORD}}
+          vault_password: ${{ secrets.VAULT_PASSWORD }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
