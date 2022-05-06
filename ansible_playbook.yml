@@ -16,7 +16,7 @@
         region: us-east-1
         #key_name: {{ devops_reg.key.private_key }}
         key_name: devops
-        vpc_subnet_id: subnet-0a82f2ce44f8a8b01
+        vpc_subnet_id: subnet-09cc2e98aa9a8617d
         assign_public_ip: yes
         wait: yes
         count: 1
