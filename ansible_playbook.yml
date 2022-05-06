@@ -13,6 +13,13 @@
     #  amazon.aws.ec2_key:
     #    name: devops
     #    register: devops_reg
+    #try to log in here first before all the other tasks
+    - name: Auth
+      ec2:
+        aws_access_key: "{{access_key}}"
+        aws_secret_key: "{{secret_key}}"
+        security_token: "{{session_token}}"
+
     - name: Gather EC2 instances info
       ec2_instance_facts:
         region: us-east-1
