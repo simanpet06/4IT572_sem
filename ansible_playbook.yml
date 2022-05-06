@@ -15,10 +15,11 @@
     #    register: devops_reg
     - name: Remove old instances
       amazon.aws.ec2:
+        region: us-east-1
         instance_tags:
           eshop: 1
         state: absent
-        
+
     - name: Launch EC2 instance
       ec2: 
         instance_type: t2.micro
