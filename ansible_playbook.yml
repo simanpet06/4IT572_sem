@@ -14,7 +14,7 @@
         instance_type: t2.micro
         image: ami-0c02fb55956c7d316
         region: us-east-1
-        key_name: devops-ansible
+        #key_name: devops-ansible
         vpc_subnet_id: subnet-0e56db4632cf67198
         assign_public_ip: yes
         wait: yes
@@ -64,7 +64,7 @@
       become: yes
     - name: Get eshop from Git
       git:
-        repo: https://github.com/simanpet06/4IT572_docker.git
+        repo: https://github.com/simanpet06/4IT572_sem.git
         dest: ./app
     - name: Build Docker with eshop
       shell: cd app && docker build -t myeshop:latest .
