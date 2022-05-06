@@ -3,6 +3,12 @@
   connection: local
   
   tasks:
+    - name: Install dependencies
+      pip: 
+        name: 
+          - boto
+          - boto3
+
     - name: Launch EC2 instance
       ec2: 
         instance_type: t2.micro
