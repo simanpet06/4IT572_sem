@@ -1,8 +1,6 @@
 name: "Build and test our eshop"
 
 on:
-  workflow_dispatch:
-  push:
   pull_request:
     types: [opened]
 
