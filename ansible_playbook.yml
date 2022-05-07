@@ -3,7 +3,7 @@
   connection: local
   
   tasks:
-    - name: Install dependencies
+    - name: Install boto and boto3
       pip: 
         name: 
           - boto
@@ -45,7 +45,7 @@
         image: ami-0c02fb55956c7d316
         region: us-east-1
         key_name: devops
-        vpc_subnet_id: subnet-09cc2e98aa9a8617d
+        vpc_subnet_id: subnet-083ed52f07feb24ba
         assign_public_ip: yes
         wait: yes
         count: 1
